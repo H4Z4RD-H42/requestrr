@@ -121,15 +121,16 @@ namespace Requestrr.WebApi
 
             app.UseHttpsRedirection();
 
+            string requestPath = !string.IsNullOrWhiteSpace(Program.BaseUrl) ? Program.BaseUrl : string.Empty;
             app.UseStaticFiles(new StaticFileOptions
             {
                 FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "ClientApp/build")),
-                RequestPath = !string.IsNullOrWhiteSpace(Program.BaseUrl) ? Program.BaseUrl : string.Empty
+                RequestPath = requestPath
             }); ;
 
-            if (!string.IsNullOrWhiteSpace(Program.BaseUrl))
+            if (!string.IsNullOrWhiteSpace(requestPath))
             {
-                app.UsePathBase(Program.BaseUrl);
+                app.UsePathBase(requestPath);
             }
 
             app.UseRouting();
@@ -137,7 +138,7 @@ namespace Requestrr.WebApi
             app.UseSpaStaticFiles(new StaticFileOptions
             {
                 FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "ClientApp/build/static")),
-                RequestPath = "/static"
+                RequestPath = requestPath + "/static"
             });
 
             app.UseAuthentication();
