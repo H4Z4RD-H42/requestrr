@@ -9,15 +9,15 @@
     <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DSharpPlus.Commands" Version="5.0.0-nightly-02389" />
-    <PackageReference Include="DSharpPlus.SlashCommands" Version="5.0.0-nightly-02389" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6" />
-    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="8.0.6" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.2" />
-    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.6.2" />
-    <PackageReference Include="DSharpPlus" Version="5.0.0-nightly-02389" />
-    <PackageReference Include="DSharpPlus.Interactivity" Version="5.0.0-nightly-02389" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.10.0" />
+    <PackageReference Include="DSharpPlus.Commands" Version="5.0.0-nightly-02402" />
+    <PackageReference Include="DSharpPlus.SlashCommands" Version="5.0.0-nightly-02402" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="8.0.10" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.2.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.2.0" />
+    <PackageReference Include="DSharpPlus" Version="5.0.0-nightly-02402" />
+    <PackageReference Include="DSharpPlus.Interactivity" Version="5.0.0-nightly-02402" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.11.0" />
     <PackageReference Include="System.Net.Security" Version="4.3.2" />
   </ItemGroup>
   <ItemGroup>
